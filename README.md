@@ -59,6 +59,7 @@ My day job is IT support at **Applied Systems**, and most of what I build lives 
 ## 💼 Experience
 
 - **IT Support Technician III @ Applied Systems** (Aug 2025–present)
+- **Generalist AI Expert @ Mercor** (Aug 2026–Oct 2026) — evaluated and rated AI model outputs across IT support, cloud infrastructure, and DevOps, wrote reference responses used to train large language models, and tested AI-generated code, CLI commands, and configurations for correctness and security.
 - **Cloud Engineer @ Novrupt** (Dec 2025–May 2026) — built REST APIs with OAuth and RBAC, ETL pipelines with AWS Glue and PySpark, CI/CD with GitHub Actions and Jenkins, and cost tooling that cut cloud spend by over 20%.
 - **Information Technology Intern @ Southside Bank** (May 2024–Aug 2024) — rotated through cybersecurity operations, identity and access management, infrastructure, and network teams.
 
