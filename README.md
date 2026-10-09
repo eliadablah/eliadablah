@@ -20,8 +20,8 @@ My day job is IT support at **Applied Systems**, and most of what I build lives 
 
 ## 🔭 What I'm building
 
-- **[Budget App Tracker](https://github.com/eliadablah/budget-app-tracker)** — I built and own a personal-finance app running live on AWS. React + Vite + TypeScript dashboard on S3 and CloudFront, a TypeScript API packaged as a Docker image on Lambda behind API Gateway, DynamoDB for data, Cognito for login, and Plaid for bank transactions. It tracks bills, partial payments, and monthly budgets by spending category, with warnings at 80% and 100%.
-- **The platform behind it** — everything is Terraform, with separate **live and staging environments** deployed from their own Git branches through GitHub Actions. Deploys are keyless (OIDC), each deploy role trusts only its own branch, and a workspace guard stops staging settings from ever being applied to the live app. A second Lambda on EventBridge Scheduler sends DKIM-signed reminder emails through SES, and CloudWatch alarms and a dashboard watch it all. Lambdas run outside a VPC on purpose, which avoids a NAT Gateway (about $33/month).
+- **[Budget App Tracker](https://github.com/eliadablah/budget-app-tracker)** — I built and own a personal-finance app that I run live on AWS. I wrote a React + Vite + TypeScript dashboard that I serve from S3 and CloudFront, and a TypeScript API that I package as a Docker image and run on Lambda behind API Gateway. I use DynamoDB for data, Cognito for login, and Plaid for my bank transactions. I use it to track my bills, partial payments, and monthly budgets by spending category, and it warns me at 80% and 100%.
+- **The platform behind it** — I wrote all of it in Terraform, and I run separate **live and staging environments** that I deploy from their own Git branches through GitHub Actions. I made the deploys keyless (OIDC), I let each deploy role trust only its own branch, and I added a workspace guard so I can never apply staging settings to the live app. I added a second Lambda on EventBridge Scheduler that sends me DKIM-signed reminder emails through SES, and I watch it all with CloudWatch alarms and a dashboard. I run my Lambdas outside a VPC on purpose, which saves me a NAT Gateway (about $33/month).
 
 ## 🛠️ Tech I work with
 
@@ -47,29 +47,29 @@ My day job is IT support at **Applied Systems**, and most of what I build lives 
 
 **IT &amp; Support** Freshdesk · Jira Service Desk · ServiceNow APIs · Network administration · Troubleshooting
 
-## 📌 Featured projects
+## 📌 My featured projects
 
-| Project | What it is | Stack |
+| Project | What I built | Stack I used |
 | --- | --- | --- |
-| [Budget App Tracker](https://github.com/eliadablah/budget-app-tracker) | Personal-finance app with bank sync, bills, budgets, and email reminders, running in live and staging environments | TypeScript · React · Lambda · DynamoDB · Terraform |
-| [Serverless CV site](https://github.com/eliadablah/CV-) | My live CV at [cv.eliadablah.com](https://cv.eliadablah.com), redesigned from an always-on setup (about $145/month) to under $1/month | Python · Docker · Lambda · CloudFront · Terraform |
-| [UTC Student Services Portal](https://github.com/eliadablah/utcapp) | Three-tier, multi-AZ AWS environment where only the load balancer is public | Terraform · ALB · EC2 Auto Scaling · RDS MySQL |
-| [ECS CI/CD pipeline](https://github.com/eliadablah/ecs-cicd-pipeline) | Container build-and-deploy pipeline for Amazon ECS | Docker · GitHub Actions · ECS |
+| [Budget App Tracker](https://github.com/eliadablah/budget-app-tracker) | My personal-finance app, where I sync my bank, track my bills and budgets, and get email reminders. I run it in live and staging environments | TypeScript · React · Lambda · DynamoDB · Terraform |
+| [Serverless CV site](https://github.com/eliadablah/CV-) | My live CV at [cv.eliadablah.com](https://cv.eliadablah.com). I redesigned it from an always-on setup (about $145/month) to one I run for under $1/month | Python · Docker · Lambda · CloudFront · Terraform |
+| [UTC Student Services Portal](https://github.com/eliadablah/utcapp) | A three-tier, multi-AZ AWS environment I wrote in Terraform, where I keep everything private except the load balancer | Terraform · ALB · EC2 Auto Scaling · RDS MySQL |
+| [ECS CI/CD pipeline](https://github.com/eliadablah/ecs-cicd-pipeline) | A pipeline I built to build and deploy my containers to Amazon ECS | Docker · GitHub Actions · ECS |
 
-## 💼 Experience
+## 💼 My experience
 
-- **IT Support Technician III @ Applied Systems** (Aug 2025–present)
-- **Generalist AI Expert @ Mercor** (Aug 2026–Oct 2026) — evaluated and rated AI model outputs across IT support, cloud infrastructure, and DevOps, wrote reference responses used to train large language models, and tested AI-generated code, CLI commands, and configurations for correctness and security.
-- **Cloud Engineer @ Novrupt** (Dec 2025–May 2026) — built REST APIs with OAuth and RBAC, ETL pipelines with AWS Glue and PySpark, CI/CD with GitHub Actions and Jenkins, and cost tooling that cut cloud spend by over 20%.
-- **Information Technology Intern @ Southside Bank** (May 2024–Aug 2024) — rotated through cybersecurity operations, identity and access management, infrastructure, and network teams.
+- **IT Support Technician III @ Applied Systems** (Aug 2025–present) — I work remotely in IT support, where I troubleshoot issues and work with Freshdesk and network services every day.
+- **Generalist AI Expert @ Mercor** (Aug 2026–Oct 2026) — I evaluated and rated AI model outputs across IT support, cloud infrastructure, and DevOps. I wrote reference responses used to train large language models, and I tested AI-generated code, CLI commands, and configurations for correctness and security.
+- **Cloud Engineer @ Novrupt** (Dec 2025–May 2026) — I built REST APIs with OAuth and RBAC, ETL pipelines with AWS Glue and PySpark, and CI/CD with GitHub Actions and Jenkins. I also wrote cost tooling that cut cloud spend by over 20%.
+- **Information Technology Intern @ Southside Bank** (May 2024–Aug 2024) — I rotated through the cybersecurity operations, identity and access management, infrastructure, and network teams.
 
-## 📜 Certifications
+## 📜 My certifications
 
-- **AWS Certified Solutions Architect – Associate** — Amazon Web Services (Apr 2026)
-- **Foundations of Cybersecurity** — Google (Nov 2024)
+- I earned my **AWS Certified Solutions Architect – Associate** from Amazon Web Services in April 2026.
+- I completed **Foundations of Cybersecurity** from Google in November 2024.
 
 ## 📫 Reach me
 
 [LinkedIn](https://www.linkedin.com/in/elikem-adablah-92978235b) · [elikadablah@gmail.com](mailto:elikadablah@gmail.com)
 
-*I build on AWS for real use — but the fundamentals (least privilege, infrastructure as code, tested pipelines) come first.*
+*I build on AWS for real use — but for me the fundamentals (least privilege, infrastructure as code, tested pipelines) come first.*
